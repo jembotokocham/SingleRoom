@@ -176,7 +176,7 @@ namespace SingleRoom.Controllers
         }
 
         // GET: Trip/Delete/5
-        [Authorize(Roles = ("Admin"))]
+        [Authorize]
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null || _context.Trip == null)
